@@ -1,0 +1,15 @@
+name: newlifefoley
+recipe: pantheon
+config:
+  framework: drupal8
+  site: newlifefoley
+  id: e65a265f-821f-480c-9ac5-cb14b37bef85
+  xdebug: true
+proxy:
+  pma:
+  - pma.newlifefoley.lndo.site
+services:
+  pma:
+    type: phpmyadmin
+    hosts:
+    - database

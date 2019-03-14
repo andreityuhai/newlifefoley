@@ -1,0 +1,5 @@
+name: Breeze API Integration
+type: module
+description: 'Generates Reports using breeze API.'
+package: newlifefoley
+core: 8.x

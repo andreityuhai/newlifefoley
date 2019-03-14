@@ -1,0 +1,14 @@
+breeze_api.reports:
+  path: '/reports'
+  defaults:
+    _title: 'Breeze API Reports'
+    _form: '\Drupal\breeze_api\Form\ReportsForm'
+  requirements:
+    _permission: 'administer breeze_api'
+breeze_api.settings:
+  path: '/admin/structure/breeze_api/settings'
+  defaults:
+    _form: '\Drupal\breeze_api\Form\BreezeAPISettings'
+    _title: 'Breeze API Settings'
+  requirements:
+    _permission: 'administer breeze_api'

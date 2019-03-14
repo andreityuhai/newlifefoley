@@ -5,7 +5,12 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "composer/installers": "^1.0.24",
-        "wikimedia/composer-merge-plugin": "^1.4"
+        "wikimedia/composer-merge-plugin": "^1.4",
+        "drupal/adminimal_theme": "^1.4",
+        "drupal/adminimal_admin_toolbar": "^1.9",
+        "drupal/devel": "^2.0",
+        "drupal/single_datetime": "^1.7",
+        "balbuf/drupal-libraries-installer": "^1.0"
     },
     "replace": {
         "drupal/core": "^8.6"
@@ -39,7 +44,13 @@
             "themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"],
             "modules/custom/{$name}": ["type:drupal-custom-module"],
-            "themes/custom/{$name}": ["type:drupal-custom-theme"]
+            "themes/custom/{$name}": ["type:drupal-custom-theme"],
+            "libraries/{$name}/": ["type:drupal-library"]
+        },
+        "extra": {
+            "drupal-libraries": {
+                "datetimepicker": "https://github.com/xdan/datetimepicker/archive/2.5.20.zip"
+            }
         }
     },
     "autoload": {

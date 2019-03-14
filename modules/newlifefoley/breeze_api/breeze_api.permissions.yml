@@ -1,0 +1,4 @@
+administer breeze_api:
+  title: 'Administer Breeze API module'
+  description: 'Generate reports using Breeze API.'
+  restrict access: TRUE
